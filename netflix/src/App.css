@@ -1,0 +1,45 @@
+
+
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  
+}
+
+html {
+  scroll-behavior: smooth;
+  
+}
+
+body {
+  font-family: "Urbanist", sans-serif;
+  font-size: .9rem;
+  background: #010d23;
+}
+
+header.active_header{
+  @apply duration-500 shadow-md backdrop-blur-lg bg-[#010d23]/30
+}
+
+section {
+  padding: 50px 0;
+}
+
+.swiper .swiper-wrapper .swiper-slide{
+  @apply w-[50%] 2xl:w-[15%] lg:w-[18%] md:w-[40%]
+}
+
+.menu-navbar{
+  @apply text-green-500
+}
+
+.acordion{
+  @apply  transition-all duration-300 -mt-[70px] opacity-0
+}
+
+.acordion.show{
+  @apply  h-auto transition-all duration-300 mt-0 opacity-100
+}
